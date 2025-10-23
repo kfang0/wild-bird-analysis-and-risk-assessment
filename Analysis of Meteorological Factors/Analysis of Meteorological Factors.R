@@ -71,9 +71,10 @@ pdpVars(data = df,
 # Calculate R-squared
 cor(df$count,predict(best_model))^2
 
-# 使用caret的变量重要性函数
+# Use caret's variable importance function
 var_imp_caret <- varImp(best_model,scale = F)
 print(var_imp_caret)
+
 
 
 

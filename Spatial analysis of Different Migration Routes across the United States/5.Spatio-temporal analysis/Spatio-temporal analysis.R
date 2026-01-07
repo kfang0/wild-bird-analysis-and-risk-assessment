@@ -47,7 +47,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -172,7 +172,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -295,7 +295,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -417,7 +417,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -540,7 +540,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -662,7 +662,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -784,7 +784,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -906,7 +906,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -1028,7 +1028,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -1150,7 +1150,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -1272,7 +1272,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_non_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -1393,7 +1393,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_non_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -1516,7 +1516,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_non_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -1639,7 +1639,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_non_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -1761,7 +1761,7 @@ us_states <- us_map(regions = "states")
 # Merge Data
 data_all <- merge(us_states,df_us_non_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -1903,7 +1903,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -2035,7 +2035,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -2160,7 +2160,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -2285,7 +2285,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -2410,7 +2410,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -2535,7 +2535,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -2660,7 +2660,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -2785,7 +2785,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -2910,7 +2910,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -3035,7 +3035,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -3160,7 +3160,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_non_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -3285,7 +3285,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_non_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -3410,7 +3410,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_non_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -3534,7 +3534,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_non_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -3658,7 +3658,7 @@ us_states <- subset(us_states,full %in% Pacific_road)
 # Merge Data
 data_all <- merge(us_states,df_pacific_non_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -3804,7 +3804,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -3935,7 +3935,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -4060,7 +4060,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -4185,7 +4185,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -4310,7 +4310,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -4436,7 +4436,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -4561,7 +4561,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -4686,7 +4686,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -4812,7 +4812,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -4937,7 +4937,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -5062,7 +5062,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_non_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -5187,7 +5187,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_non_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -5312,7 +5312,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_non_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -5436,7 +5436,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_non_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -5561,7 +5561,7 @@ us_states <- subset(us_states,full %in% Central_road)
 # Merge Data
 data_all <- merge(us_states,df_central_non_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -5708,7 +5708,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -5842,7 +5842,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -5968,7 +5968,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -6093,7 +6093,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -6218,7 +6218,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -6343,7 +6343,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -6468,7 +6468,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -6593,7 +6593,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -6718,7 +6718,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -6843,7 +6843,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -6968,7 +6968,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_non_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -7093,7 +7093,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_non_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -7218,7 +7218,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_non_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -7343,7 +7343,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_non_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -7468,7 +7468,7 @@ us_states <- subset(us_states,full %in% Mississippi_road)
 # Merge Data
 data_all <- merge(us_states,df_mississippi_non_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -7616,7 +7616,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -7748,7 +7748,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -7874,7 +7874,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -8000,7 +8000,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -8126,7 +8126,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -8252,7 +8252,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -8379,7 +8379,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -8505,7 +8505,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -8631,7 +8631,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -8755,7 +8755,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -8880,7 +8880,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_non_magritory, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -9005,7 +9005,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_non_magritory_spring, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -9130,7 +9130,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_non_magritory_summer, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -9255,7 +9255,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_non_magritory_autumn, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -9380,7 +9380,7 @@ us_states <- subset(us_states,full %in% Atlantic_road)
 # Merge Data
 data_all <- merge(us_states,df_atlantic_non_magritory_winter, by.x = "full", by.y = "state", all.x = TRUE)
 data_all$record_count[is.na(data_all$record_count)] <- 0
-# KNN requires coordinates. We must first get the centroid (center point) for each state.
+# KNN requires coordinates
 coords <- st_coordinates(st_centroid(usmap_transform(data_all)))
 k_values <- 1:5
 moran_results <- numeric(length(k_values))
@@ -9507,4 +9507,5 @@ gi61 + gi62 + gi63 + gi64 + gi65 +
   plot_layout(ncol = 5,guides = 'collect')
 
 # ggsave('Atlantic_Gen_Bi.pdf',width = 15,height = 12,dpi = 600)
+
 
